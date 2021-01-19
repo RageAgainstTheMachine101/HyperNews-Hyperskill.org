@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add News</title>
+    {% load static %}
+    <link rel="stylesheet" target="_blank" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <h2>Please add your news here ^_^</h2>
+    <form action="" method="post">{% csrf_token %}
+        <label>News title:
+            <input type="text" name="title">
+        </label>
+        <br>
+        <br>
+        <label>News text:
+            <input type="text" name="text">
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <a target="_blank" target="_blank" href="/news/">Home page</a>
+</body>
+</html>

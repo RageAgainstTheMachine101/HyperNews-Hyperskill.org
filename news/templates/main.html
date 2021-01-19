@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Home</title>
+    {% load static %}
+    <link rel="stylesheet" target="_blank" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <h2>Hyper news</h2>
+    <form action="" method="get">{% csrf_token %}
+        <label>
+            <input type="search" id="site-search" name="q">
+        </label>
+        <button>Search</button>
+    </form>
+    <br>
+    {{ blocks | safe }}
+    <a target="_blank" target="_blank" href="/news/">Home page</a>
+    <a target="_blank" target="_blank" href="/news/create/">Create News</a>
+    {{ q }}
+</body>
+</html>

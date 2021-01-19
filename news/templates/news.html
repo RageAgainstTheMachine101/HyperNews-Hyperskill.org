@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyper News</title>
+    {% load static %}
+    <link rel="stylesheet" target="_blank" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <h2>{{ req_news.title }}</h2>
+    <p>{{ req_news.created }}</p>
+    <p>{{ req_news.text }}</p>
+    <br>
+    <br>
+    <a target="_blank" target="_blank" href="/news/">Home page</a>
+</body>
+</html>
